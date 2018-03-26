@@ -30,7 +30,7 @@ class Board
   end
 
   def taken?(user_input)
-    position != ' '
+    position(user_input) != ' '
   end
 
 end
