@@ -8,7 +8,7 @@ class Board
   def reset!
     @cells = Array.new(9,' ')
   end
-  
+
   def display
     puts " #{@cells[0]} | #{@cells[1]} | #{@cells[2]} "
     puts "-----------"
@@ -20,6 +20,6 @@ class Board
   def position(user_input)
     @cells[user_input.to_i-1]
   end
-    
+
 
 end
