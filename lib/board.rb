@@ -33,4 +33,8 @@ class Board
     position(user_input) != ' '
   end
 
+  def valid_move?(user_input)
+    taken?(user_input) && (1..9).include?(user_input.to_i)
+  end
+
 end
