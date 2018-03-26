@@ -34,7 +34,7 @@ class Board
   end
 
   def valid_move?(user_input)
-    taken?(user_input) && (1..9).include?(user_input.to_i)
+    !taken?(user_input) && (1..9).include?(user_input.to_i)
   end
 
 end
