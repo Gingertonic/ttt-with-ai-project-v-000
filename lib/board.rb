@@ -3,6 +3,6 @@ class Board
 
 
   def reset!
-    @cells = Array.new(9,'')
+    @cells = Array.new(9,' ')
   end
 end
