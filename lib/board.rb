@@ -5,6 +5,10 @@ class Board
     reset!
   end
 
+  def reset!
+    @cells = Array.new(9,' ')
+  end
+  
   def display
     puts " #{@cells[0]} | #{@cells[1]} | #{@cells[2]} "
     puts "-----------"
@@ -13,7 +17,9 @@ class Board
     puts " #{@cells[6]} | #{@cells[7]} | #{@cells[8]} "
   end
 
-  def reset!
-    @cells = Array.new(9,' ')
+  def position(user_input)
+    @cells[user_input.to_i-1]
   end
+    
+
 end
