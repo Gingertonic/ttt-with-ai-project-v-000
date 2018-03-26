@@ -29,4 +29,8 @@ class Board
     @cells.find_all{ |cell| cell != ' '}.length
   end
 
+  def taken?(user_input)
+    position != ' '
+  end
+
 end
