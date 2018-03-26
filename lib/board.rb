@@ -27,6 +27,6 @@ class Board
 
   def turn_count
     @cells.collect{ |cell| cell != ' '}.length
-
+  end
 
 end
