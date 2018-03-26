@@ -25,5 +25,8 @@ class Board
     !@cells.include?(' ')
   end
 
+  def turn_count
+    @cells.collect{ |cell| cell != ' '}.length
+
 
 end
