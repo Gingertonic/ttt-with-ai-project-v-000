@@ -37,4 +37,8 @@ class Board
     !taken?(user_input) && (1..9).include?(user_input.to_i)
   end
 
+  def update(user_input, player)
+    @cells[user_input.to_i-1] = player.token
+  end
+
 end
